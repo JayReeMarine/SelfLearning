@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Week5MapsLec</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyByB64x8WOemsLdnmypzU-sKNBTJeLS3Nw</string>
+</resources>

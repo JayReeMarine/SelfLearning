@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_clear_all_fields"
+        android:title="Clear Fields" />
+    <item
+        android:id="@+id/option_load_data"
+        android:title="Load Data" />
+</menu>

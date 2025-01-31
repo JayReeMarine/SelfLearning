@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">fit2081week3Lecture</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">item_3</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>
