@@ -23,5 +23,5 @@ class Solution:
             return True
         else:
             return False
-#time complexity : O(n)
-#space complexity: O(h)
+#time complexity : O(n+m)
+#space complexity: O(h_p + h_q) where h_p is the height of p and h_q is the height of q
