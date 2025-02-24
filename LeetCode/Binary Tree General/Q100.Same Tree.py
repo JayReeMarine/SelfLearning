@@ -23,3 +23,5 @@ class Solution:
             return True
         else:
             return False
+#time complexity : O(n)
+#space complexity: O(h)
