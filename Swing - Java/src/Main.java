@@ -62,39 +62,47 @@ public class Main {
         //part three
 
         // JPanel = a GUI component that functions as a container to hold other components
-        ImageIcon icon = new ImageIcon("AWS Image.png");
+//        ImageIcon icon = new ImageIcon("AWS Image.png");
+//
+//        JLabel label = new JLabel();
+//        label.setText("Hello this is Jaeyun");
+//        label.setIcon(icon);
+//        label.setHorizontalTextPosition(JLabel.CENTER);
+//        label.setVerticalTextPosition(JLabel.TOP);
+//        label.setBounds(0,0,250,250);
+//
+//
+//        JPanel redPanel = new JPanel(); // create a panel
+//        redPanel.setBackground(Color.red); // set background color
+//        redPanel.setBounds(0,0,250,250); // set x, y position within frame as well as dimensions
+//
+//        JPanel bluePanel = new JPanel(); // create a panel
+//        bluePanel.setBackground(Color.blue); // set background color
+//        bluePanel.setBounds(250,0,250,250); // set x, y position within frame as well as dimensions
+//
+//        JPanel greenPanel = new JPanel(); // create a panel
+//        greenPanel.setBackground(Color.green); // set background color
+//        greenPanel.setBounds(0,250,500,250); // set x, y position within frame as well as dimensions
+//        greenPanel.setLayout(null); // set layout of panel
+//
+//        JFrame frame = new JFrame();
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.setLayout(null);
+//        frame.setSize(1000,1000);
+//        frame.setVisible(true);
+//
+//        frame.add(redPanel);
+//        frame.add(bluePanel);
+//        frame.add(greenPanel);
+//        greenPanel.add(label);
 
-        JLabel label = new JLabel();
-        label.setText("Hello this is Jaeyun");
-        label.setIcon(icon);
-        label.setHorizontalTextPosition(JLabel.CENTER);
-        label.setVerticalTextPosition(JLabel.TOP);
-        label.setBounds(0,0,250,250);
+        //--------------------------------------------------------------------------------
+        //part four
 
+        // JButton = a button that performs an action when clicked on
 
-        JPanel redPanel = new JPanel(); // create a panel
-        redPanel.setBackground(Color.red); // set background color
-        redPanel.setBounds(0,0,250,250); // set x, y position within frame as well as dimensions
+        MyFrame frame = new MyFrame();
 
-        JPanel bluePanel = new JPanel(); // create a panel
-        bluePanel.setBackground(Color.blue); // set background color
-        bluePanel.setBounds(250,0,250,250); // set x, y position within frame as well as dimensions
-
-        JPanel greenPanel = new JPanel(); // create a panel
-        greenPanel.setBackground(Color.green); // set background color
-        greenPanel.setBounds(0,250,500,250); // set x, y position within frame as well as dimensions
-        greenPanel.setLayout(null); // set layout of panel
-
-        JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(null);
-        frame.setSize(1000,1000);
-        frame.setVisible(true);
-
-        frame.add(redPanel);
-        frame.add(bluePanel);
-        frame.add(greenPanel);
-        greenPanel.add(label);
 
 
     }
