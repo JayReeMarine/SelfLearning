@@ -316,7 +316,14 @@ public class Main {
 
         // JComboBox = a GUI component that combines a button or editable field and a drop-down list
 
-        new MyFrame();
+//        new MyFrame();
+
+        //--------------------------------------------------------------------------------
+        //part fifteen
+
+        // JSlider = a GUI component that lets the user graphically select a value by sliding a knob within a bounded interval
+
+        SliderDemo sliderDemo = new SliderDemo();
 
     }
 }
