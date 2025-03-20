@@ -102,37 +102,88 @@ public class MyFrame extends JFrame implements ActionListener{
 //
 //        }
 
-    JButton button;
-    JCheckBox checkBox;
-    ImageIcon xIcon;
-    ImageIcon checkIcon;
+    //-----------------
     // Part12
+
+//    JButton button;
+//    JCheckBox checkBox;
+//    ImageIcon xIcon;
+//    ImageIcon checkIcon;
+//    MyFrame(){
+//        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        this.setLayout(new FlowLayout());
+//
+//
+//        button = new JButton();
+//        button.setText("Submit");
+//        button.addActionListener(this);
+//
+//
+//        checkBox = new JCheckBox();
+//        checkBox.setText("I am not a robt");
+//        checkBox.setFocusable(false);
+//        checkBox.setFont(new Font("Consolas",Font.PLAIN,35));
+//
+//        this.add(button);
+//        this.add(checkBox);
+//        this.pack();
+//        this.setVisible(true);
+//
+//    }
+//
+//    @Override
+//    public void actionPerformed(ActionEvent e){
+//        if(e.getSource()==button){
+//            checkBox.isSelected();
+//        }
+//    }
+
+    //-----------------
+    // Part13
+    JRadioButton pizzaButton;
+    JRadioButton hamburgerButton;
+    JRadioButton hotdogButton;
+
+    ImageIcon pizzaIcon;
+    ImageIcon hamburgerIcon;
+    ImageIcon hotdogIcon;
+
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
+        pizzaButton = new JRadioButton("pizza");
+        hamburgerButton = new JRadioButton("hamburger");
+        hotdogButton = new JRadioButton("hotdog");
 
-        button = new JButton();
-        button.setText("Submit");
-        button.addActionListener(this);
+        ButtonGroup group = new ButtonGroup();
+        group.add(pizzaButton);
+        group.add(hamburgerButton);
+        group.add(hotdogButton);
+
+        pizzaButton.addActionListener(this);
+        hamburgerButton.addActionListener(this);
+        hotdogButton.addActionListener(this);
 
 
-        checkBox = new JCheckBox();
-        checkBox.setText("I am not a robt");
-        checkBox.setFocusable(false);
-        checkBox.setFont(new Font("Consolas",Font.PLAIN,35));
+        this.add(pizzaButton);
+        this.add(hamburgerButton);
+        this.add(hotdogButton);
 
-        this.add(button);
-        this.add(checkBox);
         this.pack();
         this.setVisible(true);
-
     }
 
     @Override
     public void actionPerformed(ActionEvent e){
-        if(e.getSource()==button){
-            checkBox.isSelected();
+        if(e.getSource()==pizzaButton){
+            System.out.println("You ordered pizza");
+        }
+        if(e.getSource()==hamburgerButton){
+            System.out.println("You ordered hamburger");
+        }
+        if(e.getSource()==hotdogButton){
+            System.out.println("You ordered hotdog");
         }
     }
 

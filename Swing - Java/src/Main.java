@@ -302,6 +302,13 @@ public class Main {
 
         // CheckBox = a GUI component that can be selected or deselected
 
+//        new MyFrame();
+
+        //--------------------------------------------------------------------------------
+        //part thirteen
+
+        // JRadioButton = a GUI component that allows users to select one option from a group
+
         new MyFrame();
 
     }
