@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MyFrame extends JFrame implements ActionListener{
+public class MyFrame extends JFrame implements ActionListener {
     // Part1
 //    MyFrame(){
 //        this.setTitle("JFrame title goes here"); // sets title of frame
@@ -64,7 +64,7 @@ public class MyFrame extends JFrame implements ActionListener{
 //            label.setVisible(true);
 //        }
 //    }
-        //handle button click event
+    //handle button click event
 
     //------------------
     // Part11
@@ -140,52 +140,87 @@ public class MyFrame extends JFrame implements ActionListener{
 
     //-----------------
     // Part13
-    JRadioButton pizzaButton;
-    JRadioButton hamburgerButton;
-    JRadioButton hotdogButton;
+//    JRadioButton pizzaButton;
+//    JRadioButton hamburgerButton;
+//    JRadioButton hotdogButton;
+//
+//    ImageIcon pizzaIcon;
+//    ImageIcon hamburgerIcon;
+//    ImageIcon hotdogIcon;
+//
+//    MyFrame(){
+//        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        this.setLayout(new FlowLayout());
+//
+//        pizzaButton = new JRadioButton("pizza");
+//        hamburgerButton = new JRadioButton("hamburger");
+//        hotdogButton = new JRadioButton("hotdog");
+//
+//        ButtonGroup group = new ButtonGroup();
+//        group.add(pizzaButton);
+//        group.add(hamburgerButton);
+//        group.add(hotdogButton);
+//
+//        pizzaButton.addActionListener(this);
+//        hamburgerButton.addActionListener(this);
+//        hotdogButton.addActionListener(this);
+//
+//
+//        this.add(pizzaButton);
+//        this.add(hamburgerButton);
+//        this.add(hotdogButton);
+//
+//        this.pack();
+//        this.setVisible(true);
+//    }
+//
+//    @Override
+//    public void actionPerformed(ActionEvent e){
+//        if(e.getSource()==pizzaButton){
+//            System.out.println("You ordered pizza");
+//        }
+//        if(e.getSource()==hamburgerButton){
+//            System.out.println("You ordered hamburger");
+//        }
+//        if(e.getSource()==hotdogButton){
+//            System.out.println("You ordered hotdog");
+//        }
+//    }
 
-    ImageIcon pizzaIcon;
-    ImageIcon hamburgerIcon;
-    ImageIcon hotdogIcon;
+    //-----------------
+    // Part14
+    JComboBox comboBox;
 
-    MyFrame(){
+    MyFrame() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
-        pizzaButton = new JRadioButton("pizza");
-        hamburgerButton = new JRadioButton("hamburger");
-        hotdogButton = new JRadioButton("hotdog");
+        String[] animals = {"dog", "cat", "bird"};
+        comboBox = new JComboBox(animals);
+        comboBox.addActionListener(this);
 
-        ButtonGroup group = new ButtonGroup();
-        group.add(pizzaButton);
-        group.add(hamburgerButton);
-        group.add(hotdogButton);
+        //comboBox.setEditable(true);
+        comboBox.addItem("horse");
+        comboBox.insertItemAt("pig", 0);
+        comboBox.setSelectedIndex(0);
+        comboBox.removeItem("cat");
+        comboBox.removeItemAt(0);
+        comboBox.removeAllItems();
 
-        pizzaButton.addActionListener(this);
-        hamburgerButton.addActionListener(this);
-        hotdogButton.addActionListener(this);
 
-
-        this.add(pizzaButton);
-        this.add(hamburgerButton);
-        this.add(hotdogButton);
+        this.add(comboBox);
 
         this.pack();
         this.setVisible(true);
     }
 
     @Override
-    public void actionPerformed(ActionEvent e){
-        if(e.getSource()==pizzaButton){
-            System.out.println("You ordered pizza");
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == comboBox) {
+            //System.out.println(comboBox.getSelectedItem());
+            System.out.println(comboBox.getSelectedIndex()
         }
-        if(e.getSource()==hamburgerButton){
-            System.out.println("You ordered hamburger");
-        }
-        if(e.getSource()==hotdogButton){
-            System.out.println("You ordered hotdog");
-        }
+
+
     }
-
-
 }
