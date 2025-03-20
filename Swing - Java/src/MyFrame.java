@@ -67,39 +67,72 @@ public class MyFrame extends JFrame implements ActionListener{
         //handle button click event
 
     //------------------
-    // Part5
+    // Part11
+//    JButton button;
+//    JTextField textField;
+//    MyFrame() {
+//        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        this.setLayout(new FlowLayout());
+//
+//        button = new JButton("Submit");
+//        button.addActionListener(this);
+//        textField = new JTextField();
+//        textField.setPreferredSize(new Dimension(250,40));
+//
+//        textField.setFont(new Font("Consolas",Font.PLAIN,35));
+//        textField.setForeground(Color.red);
+//        textField.setBackground(Color.black);
+//        textField.setCaretColor(Color.white);
+//        textField.setText("Username");
+//
+//
+//        this.add(button);
+//        this.add(textField);
+//
+//
+//        this.pack();
+//        this.setVisible(true);
+//    }
+//    @Override
+//    public void actionPerformed(ActionEvent e){
+//        if(e.getSource()==button){
+//            System.out.print("Welcome " + textField.getText());
+//            button.setEnabled(false);
+//            textField.setEditable(false);
+//
+//        }
+
     JButton button;
-    JTextField textField;
-    MyFrame() {
+    JCheckBox checkBox;
+    ImageIcon xIcon;
+    ImageIcon checkIcon;
+    // Part12
+    MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
-        button = new JButton("Submit");
+
+        button = new JButton();
+        button.setText("Submit");
         button.addActionListener(this);
-        textField = new JTextField();
-        textField.setPreferredSize(new Dimension(250,40));
 
-        textField.setFont(new Font("Consolas",Font.PLAIN,35));
-        textField.setForeground(Color.red);
-        textField.setBackground(Color.black);
-        textField.setCaretColor(Color.white);
-        textField.setText("Username");
 
+        checkBox = new JCheckBox();
+        checkBox.setText("I am not a robt");
+        checkBox.setFocusable(false);
+        checkBox.setFont(new Font("Consolas",Font.PLAIN,35));
 
         this.add(button);
-        this.add(textField);
-
-
+        this.add(checkBox);
         this.pack();
         this.setVisible(true);
+
     }
+
     @Override
     public void actionPerformed(ActionEvent e){
         if(e.getSource()==button){
-            System.out.print("Welcome " + textField.getText());
-            button.setEnabled(false);
-            textField.setEditable(false);
-
+            checkBox.isSelected();
         }
     }
 
