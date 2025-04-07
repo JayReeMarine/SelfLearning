@@ -15,15 +15,20 @@ class Solution:
     #https://www.youtube.com/watch?time_continue=333&v=luicuNOBTAI&embeds_referring_euri=https%3A%2F%2Fleetcode.com%2F&source_ve_path=MTM5MTE3LDEyNzI5OSwxMjcyOTksMTI3Mjk5LDEyNzI5OSwxMjcyOTksMjM4NTE
     
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # seen = {}
+        # for i in range(len(nums)):
+        #     diff = target - nums[i]
+        #     if diff in seen:
+        #         return [seen[diff],i]
+        #     else:
+        #         seen[nums[i]] = i
         seen = {}
-
-        for i in range(len(nums)):
-            diff = target - nums[i]
+        for i,num in enumerate(nums):
+            diff = target - num
             if diff in seen:
                 return [seen[diff], i]
-            else:
-                seen[nums[i]] = i
-
+            seen[num] = i
+        
 
 nums = [2, 7, 11, 15]
 target = 9
