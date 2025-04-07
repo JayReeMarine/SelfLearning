@@ -2,27 +2,29 @@
 
 class Solution:
     def maxArea(self, height: list[int]) -> int:
-        # Initialize two pointers: one at the beginning (left) and one at the end (right)
-        left, right = 0, len(height) - 1  
+
+        # max_con = 0
+        # for i in range(len(height)):
+        #     for j in range(i+1,len(height)):
+        #         con = min(height[i],height[j]) * (j-i)
+        #         max_con = max(max_con,con)
         
-        # Variable to keep track of the maximum area found
-        max_area = 0  
+        # return max_con
+        left = 0
+        right = len(height) -1
+        max_con = 0
 
-        while left < right:  # Continue until the two pointers meet
-            # Calculate the area between the two pointers:
-            # The height of the container is determined by the shorter line (min(height[left], height[right]))
-            # The width is the distance between the two pointers (right - left)
-            max_area = max(max_area, min(height[left], height[right]) * (right - left))
+        while left < right:
+            width = right - left
+            h = min(height[left], height[right])
+            con = width *h
+            max_con = max(max_con, con)
 
-            # Move the pointer that is at the shorter height:
-            # - If height[left] is smaller, moving it might increase the area by finding a taller line
-            # - If height[right] is smaller, moving it might increase the area
             if height[left] < height[right]:
-                left += 1  # Move left pointer to the right
+                left +=1
             else:
-                right -= 1  # Move right pointer to the left
-        
-        return max_area  # Return the maximum area found
+                right -=1
+        return max_con
 
 
 
