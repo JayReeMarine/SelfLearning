@@ -22,19 +22,19 @@ import heapq
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
         freq = Counter(tasks)
-        heap = [-cnt for cnt in freq.values()]  # Max Heap을 위해 음수 사용
+        heap = [-cnt for cnt in freq.values()]  
         heapq.heapify(heap)
 
         time = 0
-        cooldown = deque()  # (재사용 가능 시간, count)
+        cooldown = deque()  
 
         while heap or cooldown:
             time += 1
 
             if heap:
-                cnt = heapq.heappop(heap) + 1  # 작업 1번 실행 (음수니까 +1)
+                cnt = heapq.heappop(heap) + 1  
                 if cnt != 0:
-                    cooldown.append((time + n, cnt))  # 쿨다운 큐에 저장
+                    cooldown.append((time + n, cnt))  
 
             if cooldown and cooldown[0][0] == time:
                 _, ready_task = cooldown.popleft()
