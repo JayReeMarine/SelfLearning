@@ -20,7 +20,7 @@ from collections import Counter, deque
 import heapq
 
 class Solution:
-    def leastInterval(self, tasks: List[str], n: int) -> int:
+    def leastInterval(self, tasks: list[str], n: int) -> int:
         freq = Counter(tasks)
         heap = [-cnt for cnt in freq.values()]  
         heapq.heapify(heap)
