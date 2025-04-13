@@ -1,6 +1,6 @@
 This is Jay's self learning
 
 The categories are divided as 
-- Leetcode
+- Leetcode (algorithm questions)
 - Neetcode
 - Programming language
