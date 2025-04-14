@@ -1,0 +1,86 @@
+
+
+html {
+	
+	background-color: #d3dbde;
+	background-image: url(images.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+body {
+	background-color:#ffffff;
+	color: #333333;
+	font-family: "Special Gothic Expanded One", "Segoe UI", Arial, sans-serif;
+	width:1000px;
+	border: 20px solid #ffffff;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+header {
+	background-color: #004499;
+	background-image: radial-gradient(red,blue,gold);
+	font: -webkit-small-control;
+	color: #ffffff;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+nav {
+	background:#333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+}
+
+nav a {
+	font-weight: bold;
+	color:#ffffff;
+}
+
+main {
+	background-color: #ffffff;
+	display: flex;
+}
+
+footer {
+	background-color: #3d4348;
+	color: #ffffff;
+	padding: 20px;
+}
+
+footer a {
+	color:#99ddff;
+	font-weight: bold;
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+aside {
+	background-color: #dddddd;
+	padding: 20px;
+	width: 300px;
+	
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+article {
+	padding: 20px;
+}
