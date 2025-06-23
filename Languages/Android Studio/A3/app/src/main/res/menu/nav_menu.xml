@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/add_item" android:id="@+id/nav_add_item"/>
+    <item android:title="@string/add_invoice" android:id="@+id/nav_add_invoice"/>
+    <item android:title="@string/clear_fields" android:id="@+id/nav_clear_fields"/>
+    <item android:title="@string/items_map" android:id="@+id/nav_items_map"/>
+    <item android:title="@string/list_all_invoices" android:id="@+id/nav_list_invoice"/>
+    <item android:title="@string/exit" android:id="@+id/nav_exit"/>
+</menu>

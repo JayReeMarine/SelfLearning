@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Country Details</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_country_details">Country Details</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDqmyfwgs0B0Er4q8aUhF3rAR6jfCA5nfc</string>
+</resources>
