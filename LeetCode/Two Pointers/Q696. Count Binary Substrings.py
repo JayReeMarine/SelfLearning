@@ -21,3 +21,19 @@ class Solution:
         
         return res
         
+        # prev_run = 0  
+        # cur_run = 1   
+        # res = 0
+
+        # for i in range(1, len(s)):
+        #     if s[i] == s[i - 1]:
+        #         cur_run += 1
+        #     else:
+        #         res += min(prev_run, cur_run)
+        #         prev_run = cur_run
+        #         cur_run = 1
+
+        # res += min(prev_run, cur_run)  
+        # return res
+
+        
