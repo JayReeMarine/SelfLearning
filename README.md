@@ -9,7 +9,7 @@ This repository documents my personal learning progress in computer science and 
 I mainly practice algorithm problems using Python.  
 You can view my LeetCode profile here: [LeetCode - JayReeMarine](https://leetcode.com/u/JayReeMarine/)
 
-**Progress:** 102 / 3596 questions (as of 23 June)
+**Progress:** 111 / 3596 questions (as of 9 July)
 
 **Topics Covered:**
 
@@ -18,6 +18,7 @@ You can view my LeetCode profile here: [LeetCode - JayReeMarine](https://leetcod
 - Binary Tree (General)
 - Divide and Conquer
 - Dynamic Programming
+- Greddy
 - Hash Table
 - Hash Map
 - Heap
