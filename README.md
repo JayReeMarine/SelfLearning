@@ -9,7 +9,7 @@ This repository documents my personal learning progress in computer science and 
 I mainly practice algorithm problems using Python.  
 You can view my LeetCode profile here: [LeetCode - JayReeMarine](https://leetcode.com/u/JayReeMarine/)
 
-**Progress:** 153 / 3596 questions (as of 15 Aug)
+**Progress:** 173 / 3596 questions (as of 2 Sep)
 
 **Topics Covered:**
 
