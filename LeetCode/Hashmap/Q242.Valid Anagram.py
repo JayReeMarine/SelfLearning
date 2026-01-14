@@ -41,3 +41,29 @@ class Solution:
 Solution = Solution()
 print(Solution.isAnagram("anagram", "nagaram"))  # True
 print(Solution.isAnagram("rat", "car"))  # False
+
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+        
+        # method one
+        # sort_s = sorted(s)
+        # sort_t = sorted(t)
+        # for i in range(len(sort_s)):
+        #     if sort_s[i] != sort_t[i]:
+        #         return False
+        # return True
+        
+        # method two
+        # return sorted(s) == sorted(t)
+
+        #method three
+        countS, countT = {}, {}
+
+        for i in range(len(s)):
+            countS[s[i]] = 1 + countS.get(s[i], 0)
+            countT[t[i]] = 1 + countT.get(t[i], 0)
+        return countS == countT
+
