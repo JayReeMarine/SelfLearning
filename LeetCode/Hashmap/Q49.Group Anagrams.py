@@ -1,20 +1,24 @@
 #https://leetcode.com/problems/group-anagrams/description/?envType=study-plan-v2&envId=top-interview-150
 from collections import defaultdict
+from typing import List
 class Solution:
-    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
-        
-        counter = defaultdict(list)
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # cnt = defaultdict(list)
 
-        for i in strs:
+        # for letter in strs:
+        #     sortedS = ''.join(sorted(letter))
+        #     cnt[sortedS].append(letter)
         
-            sortedStr = ''.join(sorted(i))
-            if sortedStr in counter:
-                counter[sortedStr].append(i)
-            else:
-                counter[sortedStr] = [i]
-        
+        # return list(cnt.values())
 
-        return list(counter.values())
+        cnt = defaultdict(list)
+
+        for s in strs:
+            count = [0] * 26
+            for c in s:
+                count[ord(c) - ord('a')] += 1
+            cnt[tuple(count)].append(s)
+        return list(cnt.values())
 
 
    
