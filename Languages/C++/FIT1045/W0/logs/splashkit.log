@@ -1,0 +1,4 @@
+(01/03/2026) WARNING -> Unable to locate file for song-0 (/Users/reejaeyun/Desktop/SelfLearning/Languages/C++/FIT1045/W0/sounds/test) [raised in music.cpp:47]
+(01/03/2026) WARNING -> Unable to locate file for song-0 (/Users/reejaeyun/Desktop/SelfLearning/Languages/C++/FIT1045/W0/sounds//song) [raised in music.cpp:47]
+(01/03/2026) WARNING -> Unable to locate file for song-0 (/Users/reejaeyun/Desktop/SelfLearning/Languages/C++/FIT1045/W0/sounds//test) [raised in music.cpp:47]
+(01/03/2026) WARNING -> Attempting to play music with invalid data [raised in music.cpp:141]
