@@ -12,7 +12,7 @@ const int SPIDER_RADIUS = 25;
 const int SPIDER_SPEED  = 3;
 
 // Fly appearance
-const int FLY_RADIUS = 3;
+const int FLY_RADIUS = 10;
 
 int main()
 {
@@ -40,9 +40,6 @@ int main()
     // Main game loop — runs until the user closes the window
     while (!quit_requested())
     {
-        // Process keyboard and window events first, before any game logic
-        process_events();
-
         // Move spider right, but prevent it from going off the right edge
         if (key_down(RIGHT_KEY) && spider_x + SPIDER_RADIUS < SCREEN_WIDTH)
         {
@@ -79,6 +76,9 @@ int main()
 
         // Render the frame at 60 frames per second
         refresh_screen(60);
+
+        // Get any new user interactions
+        process_events();
     }
 
     return 0;
